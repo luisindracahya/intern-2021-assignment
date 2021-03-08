@@ -10,12 +10,10 @@ import java.util.stream.Collectors;
 public class Capitalization {
 
     private static String capitalize (String input) {
-
         return WordUtils.capitalizeFully(input);
     }
 
     public static Map<String, List<String>> convertToMap (List<Book> books) {
-
         return books.stream()
                 .collect(Collectors.groupingBy(book -> capitalize(book.getAuthor()),
                         Collectors.mapping(book -> capitalize(book.getTitle()), Collectors.toList())));
