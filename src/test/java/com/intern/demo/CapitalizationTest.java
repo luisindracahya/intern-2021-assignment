@@ -30,13 +30,13 @@ public class CapitalizationTest {
                 localBook1, localBook2, localBook3, localBook4);
 
         Map<String, List<String>> result = convertToMap(inputs);
-//        System.out.println(result);
+        System.out.println(result);
         assertNotNull(result);
 
         Map<String, List<String>> temp = new HashMap<>();
-        temp.put("John Doe", Arrays.asList("Imported Book 1", "Imported Book 2", "Imported Book 3", "Imported Book 4"));
         temp.put("Jane Stark", Arrays.asList("Local Book 1", "Local Book 2", "Local Book 3", "Local Book 4"));
-//        System.out.println(temp);
+        temp.put("John Doe", Arrays.asList("Imported Book 1", "Imported Book 2", "Imported Book 3", "Imported Book 4"));
+        System.out.println(temp);
 
         assertEquals(result, temp);
     }
