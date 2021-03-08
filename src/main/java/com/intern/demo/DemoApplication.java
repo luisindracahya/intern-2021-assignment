@@ -35,7 +35,7 @@ import static com.intern.demo.Capitalization.convertToMap;
         Map<String, List<String>> result = convertToMap (inputs);
 
         System.out.println(result);
-        SpringApplication.run(DemoApplication.class, args);
+//        SpringApplication.run(DemoApplication.class, args);
     }
 
 }
